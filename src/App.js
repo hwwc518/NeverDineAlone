@@ -8,7 +8,11 @@ import './static/css/App.css';
 class App extends Component {
     render() {
         return (
-                <Header/>
+            <div>
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"/>
+              
+              <CollegeProfile/>
+            </div>
         );
     }
 }
