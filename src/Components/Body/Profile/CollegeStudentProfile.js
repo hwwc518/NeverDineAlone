@@ -34,7 +34,6 @@ class App extends Component {
                                 <span className="bolded"> Housing </span>
                                 <span id="housing"> On Campus </span>
                             </div>
-                            <button className="reserveBtn"> Reserve a stay! </button>
 
                         </div>
                         <div className = "divLine"></div>
