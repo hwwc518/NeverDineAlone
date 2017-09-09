@@ -5,7 +5,9 @@
   "dependencies": {
     "firebase": "^4.3.1",
     "react": "^15.6.1",
+    "react-autosuggest": "^9.3.2",
     "react-dom": "^15.6.1",
+    "react-power-select": "^1.0.0-beta.8",
     "react-scripts": "1.0.13"
   },
   "scripts": {
