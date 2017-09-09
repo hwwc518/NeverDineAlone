@@ -12,8 +12,8 @@ import './static/css/App.css';
 class App extends Component {
     render() {
         return (
-                // <Header/>
-                <CollegeStudentProfile/>
+			<Header/>
+			//<CollegeStudentProfile/>
         );
     }
 }
