@@ -1,0 +1,22 @@
+{
+  "name": "neverdinealone",
+  "version": "1.0.0",
+  "description": "A dining experience - meet new people while enjoying a meal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwwc518/NeverDineAlone.git"
+  },
+  "author": "Hui Wah Chiang, Kevin Foo, Simon Chen, Austin Vuong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hwwc518/NeverDineAlone/issues"
+  },
+  "homepage": "https://github.com/hwwc518/NeverDineAlone#readme",
+  "dependencies": {
+    "firebase": "^4.3.1"
+  }
+}
