@@ -12,8 +12,7 @@ class App extends Component {
         return (
                 <div>
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"/>
-                
-                <CollegeProfile/>
+                <CollegeStudentProfile />
                 </div>
 
         );
