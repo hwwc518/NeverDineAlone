@@ -1,0 +1,220 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.userImg {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+.userImgCont {
+    display: inline-block;
+}
+#name {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.bolded {
+    color: #DF4545;
+}
+.userInfoCont {
+
+    padding: 20px;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('http://campusphilly.org/wp-content/uploads/2011/12/upenn_profile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    /*filter: blur(3px);*/
+    /*color: white;
+    position: absolute;
+    top: 4.5em;
+    left: 5em;*/
+}
+
+/*.profileBannerImg {
+    filter: blur(2px);
+    width: 100%;
+    z-index: 0;
+}*/
+
+.userInfo {
+    margin-left: 5em;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 4.5em;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.bolded {
+    font-weight: 800;
+}
+.divLine {
+     margin: 0 auto;
+     margin-top: 35px;
+     border-bottom: 1px solid #d3d3d3;
+     width: 90%;
+}
+
+.bioCont {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.reserveBtn {
+    text-transform: uppercase;
+    color: white;
+    background-color: #DF4545;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    width: 18em;
+    height: 2.5em;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 5px;
+}
+
+.profileBody {
+    padding: 20px;
+}
+
+.reserveBtn:hover {
+    color: #DF4545;
+    background-color: white;
+    border: 1px solid #df4545;
+
+}
+.reserveBtn:focus {
+    outline: none;
+}
+
+.reviewChart {
+    list-style: none;
+    margin-top: 0;
+}
+.reviewChartCont {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+}
+.reviewChartItem {
+    text-align: left;
+    background-color: #f6f6f6;
+    display: block;
+    margin: 0 0 3px;
+    position: relative;
+    transition: all .3s linear
+}
+
+.reviewChartItem:hover {
+    background-color: #e9f7e2;
+}
+.reviewNum {
+    color: #black;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.reviewLabel {
+    color: black;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.reviewStars {
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 5px;
+}
+.reviewChartCont {
+    margin-left: 15px;
+    width: 300px;
+}
+
+.reviewFill {
+    background-color: #c5e4b8;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all .2s linear;
+    z-index: 0;
+}
+#thirty-five {
+    width: 35%;
+}
+#fifthteen {
+    width: 35%;
+}
+#forty-five {
+    width: 45%;
+}
+#five {
+    width: 5%;
+}
+
+.sectionSubtitle {
+    margin-bottom: 20px;
+}
+.reviewsCont {
+    display: inline-block;
+    margin-right: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #f6f6f6;
+}
+.reviewCard {
+    background-color: #C0C0C0;
+    width: 40em;
+    padding: 15px;
+    text-align: left;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.reviewCard:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
+.profileAvatarCont {
+    display: inline-block;
+    margin-right: 20px;
+}
+#reviewerName {
+    font-weight: 700;
+}
+.reviewCardInfo {
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    padding-top: 15px;
+    line-height: 20px;
+}
+.reviewStarCont {
+    margin-bottom: 15px;
+}
+.profileAvatar {
+    height: 150px;
+    border-radius: 50%;
+}
