@@ -68,6 +68,13 @@ a {
     border-radius: 0 4px 4px 0;
     cursor: pointer;
 }
+
+.PowerSelect__Options {
+    width: 23em;
+}
+.PowerSelect__SearchInput {
+    width: 96%;
+}
 .App-intro {
   font-size: large;
 }
