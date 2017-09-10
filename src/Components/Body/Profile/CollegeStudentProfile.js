@@ -8,7 +8,7 @@ class App extends Component {
     render() {
         return (
 
-                <div className = "container">
+                <div id="noPad" className = "container">
                     <div className="BannerCont">
                         <div className="userInfoCont">
 
@@ -21,7 +21,7 @@ class App extends Component {
                             </div>
                             <div className="rateCont">
                                 <span className="bolded"> Rating </span>
-                                <span id="rate">4.0</span> 
+                                <span id="rate">4.0</span>
                             </div>
                             <div className="majorCont">
                                 <span className="bolded"> Major </span>
@@ -69,7 +69,7 @@ class App extends Component {
                         </ul>
                       </div>
 
-                      
+
                       <div className="reviewsCont">
                         <ReviewCard profile="https://www.fillmurray.com/150/150" name="Bill Murray" rating="4.0" comment="Yeah. This dude was great!"/>
                         <ReviewCard profile="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2-AAAAJGM2NWI1MzAzLWJhNmUtNDRiNy1hY2U4LTdmOTdhZGEzNTI2OQ.jpg" name="Kevin Foo" rating="10.0" comment="Way better than better than the Fu School of Engineering "/>
