@@ -41,7 +41,7 @@ class SignUp extends Component {
   render() {
     return (
       <div className='app'>
-        <header>
+        <header id = "signHead">
             <div className='wrapper'>
               <h1>Live the life of a College Student</h1>
               
@@ -54,7 +54,7 @@ class SignUp extends Component {
                 <input type="date" name="bday" onChange = {this.handleChange} value = {this.state.bday} placeholder="birthday" />
                 <input type="email" name="email" onChange = {this.handleChange} value = {this.state.email} placeholder="email" />
                 <input type="password" name="password" onChange = {this.handleChange} value = {this.state.password} placeholder="password" />
-                <button>Add Item</button>
+                <button>Sign Up</button>
               </form>
           </section>
           <section className='display-item'>
