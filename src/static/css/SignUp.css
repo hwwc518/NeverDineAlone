@@ -3,13 +3,13 @@ body {
     background-color: #fff;
   }
   
-  header {
+  #signHead {
     color: #fff;
     background-color: #103D5D;
     padding: 33px 0 25px 15px;
   }
   
-  header h1 {
+  #signHead h1 {
     font-size: 25px;
     font-weight: 600;
     letter-spacing: 0.3px;
