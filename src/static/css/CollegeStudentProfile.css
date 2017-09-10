@@ -113,7 +113,9 @@
     display: block;
     margin: 0 0 3px;
     position: relative;
-    transition: all .3s linear
+    transition: all .3s linear;
+    width: 16em;
+                    
 }
 
 .reviewChartItem:hover {

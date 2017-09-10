@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import data from './CollegeInfo.json'
+import data from './CollegeInfo.json';
 
 class CollegeInfo extends Component {
 	
 	constructor(props) {
     	super(props);
-    	this.state = {collegeName: "",};
-		this.state = {collegeHiDegree: ""};
-		this.state = {collegeType: ""};
-		this.state = {collegeInStatePrice: ""};
-		this.state = {collegeOutStatePrice: ""};
-		this.state = {collegeAdmissionsYield: ""};
-		this.state = {collegePctAdmitted: ""};
+    	    this.state = {collegeName: "",};
+	    this.state = {collegeHiDegree: ""};
+	    this.state = {collegeType: ""};
+	    this.state = {collegeInStatePrice: ""};
+	    this.state = {collegeOutStatePrice: ""};
+	    this.state = {collegeAdmissionsYield: ""};
+	    this.state = {collegePctAdmitted: ""};
+            this.state = {allColleges: []}
   	}
 	
     componentWillMount() {
@@ -19,10 +20,11 @@ class CollegeInfo extends Component {
         var college = window.location.href.substring(ind+8).split("%20").join(" ");
         
         console.log(college);
-        
+        var ans = [];
         for (var i = 0; i < data.length; i++) {			
 	    var obj = data[i];
-	    if (obj.FIELD1 == college) {
+
+	    if (obj.FIELD1 == college.trim()) {
 	        this.state.collegeName = obj.FIELD1;
 	        
 	        if (obj.FIELD2 == "11") { this.state.collegeHiDegree = "Doctor's degree - research/scholarship and professional practice"; }
@@ -43,9 +45,11 @@ class CollegeInfo extends Component {
 	        this.state.collegeInStatePrice = obj.FIELD4;
 	        this.state.collegeOutStatePrice = obj.FIELD5;
 	        this.state.collegeAdmissionsYield = obj.FIELD6;
-	        this.state.collegePctAdmitted = obj.FIELD7;				
+	        this.state.collegePctAdmitted = obj.FIELD7;
+                break;
 	    }
         }
+        this.state.allColleges = ans;
     }
     
     render(collegeName) {
@@ -59,7 +63,8 @@ class CollegeInfo extends Component {
 				<b>Out-of-state Tuition Price:</b> ${this.state.collegeOutStatePrice}<br/>
 				<b>Admissions Yield:</b> {this.state.collegeAdmissionsYield}%<br/>
 				<b>Percent Admitted:</b> {this.state.collegePctAdmitted}%<br/>
-			</div>
+                               
+                </div>
         );
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './static/css/index.css';
-import {Router, Route} from 'react-router';
+import {Route} from 'react-router';
 import { BrowserRouter } from 'react-router-dom'
 
 import App from './App';
@@ -19,7 +19,8 @@ ReactDOM.render(
       <div>
         <Route exact path="/" component={App}/>
         <Route path="/signUp" component={SignUp}/>
-        <Route path="/search" component={CollegeInfo}/>
+        <Route path="/search" component={CollegeProfile}/>
+        <Route path="/studentprofile" component={CollegeStudentProfile}/>
       </div>
     </BrowserRouter>
         , document.getElementById('root')
