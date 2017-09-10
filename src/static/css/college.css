@@ -1,0 +1,78 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#collegeProfile{
+    font-family: Garamond;
+}
+
+.container-fluid{
+    margin: 0 0 !important;
+}
+
+.collegeAbout{
+    margin-left: 15%;
+    margin-right: 10%;
+    font-size: large;
+    text-align: left;
+}
+
+.mainPhoto{
+    margin: 0% 0% 0% 0% !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 35vw;
+    background-position: center; 
+
+}
+
+.borderLine{
+    margin-left: 30%;
+    margin-right: 8%;
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+.dropdown-menu{
+    width: 240px !important;
+    text-align: center;
+}
+
+.input-group .form-control:first-child{
+    height: 60px !important;
+}
+
+.reserveBtn{
+    width: 15vw;
+    height: 5vw;
+    border-radius: 20px !important;
+    font-size: 24px !important;
+    margin-left: 50%;
+    margin-top: 16.2% !important;
+    opacity: .8;
+    background-color: #8c1515 !important;
+    border-color: #8c1515 !important;
+}
+
+.full-rows{
+    width:100vw;
+    text-align: center;
+}
+
+.datePicker{
+    width: 18vw !important;
+    margin-left: 30%;
+    margin-top: 16.5%;
+    position: absolute;
+    opacity: .9;
+}
+
+.reviewChartItem{
+    width: 40%;
+}
+
+.reserveBtn:hover,
+.datePicker:hover {
+    opacity: 1;
+}
