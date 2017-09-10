@@ -72,14 +72,11 @@ a {
 .PowerSelect__Options {
     width: 23em;
 }
-.PowerSelect__SearchInput {
-    width: 96%;
-}
+
 .App-intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.PowerSelect__SearchInput {
+    width: 96%;
 }
