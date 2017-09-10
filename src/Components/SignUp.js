@@ -54,7 +54,7 @@ class SignUp extends Component {
                 <input type="date" name="bday" onChange = {this.handleChange} value = {this.state.bday} placeholder="birthday" />
                 <input type="email" name="email" onChange = {this.handleChange} value = {this.state.email} placeholder="email" />
                 <input type="password" name="password" onChange = {this.handleChange} value = {this.state.password} placeholder="password" />
-                <button>Add Item</button>
+                <button>Sign Up</button>
               </form>
           </section>
           <section className='display-item'>
