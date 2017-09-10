@@ -15,7 +15,7 @@ class App extends Component {
 			this.state.colleges.push(collegesArray[i].FIELD1);
 		}
 	}
-	
+
 	state = {
 		selectedCollege: null,
 	};
@@ -23,7 +23,7 @@ class App extends Component {
 	handleChange = ({ option }) => {
 		this.setState({ selectedCollege: option });
 	};
-	
+
     render() {
         return (
             <header>
@@ -47,7 +47,7 @@ class App extends Component {
 								onChange={this.handleChange}
 								/>
 							</div>
-                            <button className= "btn-search" type="submit" value="Submit"> Go </button>
+                            <button className= "btn-searchFront" type="submit" value="Submit"> Go </button>
                         </form>
                     </div>
                 </div>
