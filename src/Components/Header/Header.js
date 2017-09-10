@@ -1,9 +1,29 @@
 import React, { Component } from 'react';
 import headerImg from '../../static/img/header-img.jpg';
 import '../../static/css/Header.css';
-
+import collegesArray from "../CollegeNames.json";
+import 'react-power-select/dist/react-power-select.css'
+import { PowerSelect } from 'react-power-select'
 
 class App extends Component {
+	constructor(props) {
+    	super(props);
+		this.state = {colleges: []};
+	}
+	componentWillMount () {
+		for (var i = 0; i < collegesArray.length; i++) {
+			this.state.colleges.push(collegesArray[i].FIELD1);
+		}
+	}
+	
+	state = {
+		selectedCollege: null,
+	};
+
+	handleChange = ({ option }) => {
+		this.setState({ selectedCollege: option });
+	};
+	
     render() {
         return (
             <header>
@@ -16,10 +36,16 @@ class App extends Component {
                     </div>
                     <div className = "search-cont">
                         <form>
-                            <label>
-                                <input className= "inputBox" type="text" name="search" placeholder="Search Universities/Colleges" required/>
-
-                            </label>
+                            <div className="demo">
+								<h3>Search Colleges</h3>
+								<PowerSelect
+								options={this.state.colleges}
+								selected={this.state.selectedCollege}
+								optionLabelPath="name"
+								searchIndices={['name', 'code']}
+								onChange={this.handleChange}
+								/>
+							</div>
                             <button className= "btn-search" type="submit" value="Submit"> Go </button>
                         </form>
                     </div>

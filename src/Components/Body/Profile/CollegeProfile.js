@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Grid, Row, Col } from 'react-bootstrap';
 import DateTimeField  from 'react-bootstrap-datetimepicker';
+import Rating from './ProfileParts/Rating';
+import ReviewCard from './ProfileParts/ReviewCard';
 
 import '../../../static/css/college.css';
 import '../../../static/css/react-datetime.css';
@@ -26,6 +28,7 @@ class CollegeProfile extends Component {
     render() {
         return (
             <div style={{width: 0 }} id="collegeProfile">
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"/>
               <Grid fluid={true}>
                 <Row className="collegeHeader">
                   <div className="mainPhoto" style={{backgroundImage: "url('http://www.med.upenn.edu/bateslab/Quad.jpg')" }}>
@@ -62,14 +65,38 @@ class CollegeProfile extends Component {
                 <Row className="full-rows">
                   <Col md={6}>
                     <h3>Rating</h3> <br />
-                    <h4>Overall : 4.8</h4> <br />
-                    <h4>Food : 5.0</h4> <br />
-                    <h4>On Campus : 4.8</h4> <br />
-                    <h4>Off Campus : 4.8</h4> <br />
+
+                    <Row>
+                      <Col md={4} ></Col>
+                      <Col md={2} ><h4>Overall :</h4> </Col>
+                      <Col md={6}><Rating stars="4.8" reviewWidth="95%" /></Col>
+                    </Row>
+ 
+                    <Row>
+                      <Col md={4} ></Col>
+                      <Col md={2} ><h4>Food :</h4> </Col>
+                      <Col md={6}><Rating stars="4" reviewWidth="80%" /></Col>
+                    </Row>
+
+                    <Row>
+                      <Col md={4} ></Col>
+                      <Col md={2} ><h4>On-Campus :</h4> </Col>
+                      <Col md={6}><Rating stars="4.8" reviewWidth="95%" /></Col>
+                    </Row>
+
+                    <Row>
+                      <Col md={4} ></Col>
+                      <Col md={2} ><h4>Off-Campus :</h4> </Col>
+                      <Col md={6}><Rating stars="4.5" reviewWidth="90%" /></Col>
+                    </Row>
+
                   </Col>
                   
                   <Col md={6}>
                     <h3>Reviews</h3>
+
+                    <ReviewCard profile="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2-AAAAJGM2NWI1MzAzLWJhNmUtNDRiNy1hY2U4LTdmOTdhZGEzNTI2OQ.jpg" name="Kevin Foo" rating="10.0" comment="Way better than better than the Fu School of Engineering "/>
+
                   </Col>
                 </Row>
               </Grid>

@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import '../../../../static/css/CollegeStudentProfile.css';
-import profilePic from '../../../../static/img/quaker.jpg';
 
 class Rating extends Component {
+
+    constructor(props){
+        super(props);
+    }
+    
     render() {
         return(
             <li className="reviewChartItem">
@@ -10,12 +13,12 @@ class Rating extends Component {
                 <div className="reviewStars">
                   <span className="starIcon"></span>
                 </div>
-                4 Stars
+                {this.props.stars}
               </div>
               <div className="reviewNum">
-                70
+                {this.props.reviewNum }
               </div>
-              <div className="reviewFill" id="thirty-five">
+              <div className="reviewFill" style={{width: this.props.reviewWidth}}>
               </div>
             </li> 
         );

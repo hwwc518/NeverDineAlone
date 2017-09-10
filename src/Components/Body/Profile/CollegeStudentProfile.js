@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../../../static/css/CollegeStudentProfile.css';
-import profilePic from '../../../static/img/quaker.jpg'
-
+import profilePic from '../../../static/img/quaker.jpg';
+import Rating from './ProfileParts/Rating';
+import ReviewCard from './ProfileParts/ReviewCard';
 
 class App extends Component {
     render() {
@@ -20,7 +21,7 @@ class App extends Component {
                             </div>
                             <div className="rateCont">
                                 <span className="bolded"> Rating </span>
-                                <span id="rate">4.0</span>
+                                <span id="rate">4.0</span> 
                             </div>
                             <div className="majorCont">
                                 <span className="bolded"> Major </span>
@@ -34,7 +35,6 @@ class App extends Component {
                                 <span className="bolded"> Housing </span>
                                 <span id="housing"> On Campus </span>
                             </div>
-                            <button className="reserveBtn"> Reserve a stay! </button>
 
                         </div>
                         <div className = "divLine"></div>
@@ -63,149 +63,22 @@ class App extends Component {
                       </div>
                       <div className= "reviewChartCont">
                         <ul className="reviewChart">
-                          <li className="reviewChartItem">
-                            <div className="reviewLabel">
-                              <div className="reviewStars">
-                                <span className="starIcon"></span>
-                              </div>
-                              3 Stars
-                            </div>
-                            <div className="reviewNum">
-                              90
-                            </div>
-                            <div className="reviewFill" id="forty-five">
-                            </div>
-                          </li>
-                          <li className="reviewChartItem">
-                            <div className="reviewLabel">
-                              <div className="reviewStars">
-                                <span className="starIcon"></span>
-                              </div>
-                              2 Stars
-                            </div>
-                            <div className="reviewNum">
-                              30
-                            </div>
-                            <div className="reviewFill" id="fifthteen">
-                            </div>
-                          </li>
-                          <li className="reviewChartItem">
-                            <div className="reviewLabel">
-                              <div className="reviewStars">
-                                <span className="starIcon"></span>
-                              </div>
-                              1 Star
-                            </div>
-                            <div className="reviewNum">
-                              10
-                            </div>
-                            <div className="reviewFill" id="five">
-                            </div>
-                          </li>
+                          <Rating stars="4 Stars" reviewNum="90" reviewWidth="45%"/>
+                          <Rating stars="2 stars" reviewNum="30" reviewWidth="15%"/>
+                          <Rating stars="1 stars" reviewNum="10" reviewWidth="5%"/>
                         </ul>
+                      </div>
 
-                      </div>
+                      
                       <div className="reviewsCont">
-                        <div className="reviewCard">
-                          <div className="profileAvatarCont">
-                            <img className="profileAvatar" alt= "Review Card Avatar" src="https://www.fillmurray.com/150/150"/>
-                          </div>
-                          <div className="reviewCardInfo">
-                            <div className="reviewNameCont">
-                              <span id="reviewerName"> Bill Murray </span>
-                            </div>
-                            <div className="reviewStarCont">
-                              <span id="rating">4.0</span>
-                            </div>
-                            <div className="ratingTextCont">
-                              <span id="ratingText"> Yeah. This dude was great! </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="reviewCard">
-                          <div className="profileAvatarCont">
-                            <img className="profileAvatar" alt= "Review Card Avatar" src="https://www.fillmurray.com/150/150"/>
-                          </div>
-                          <div className="reviewCardInfo">
-                            <div className="reviewNameCont">
-                              <span id="reviewerName"> Bill Murray </span>
-                            </div>
-                            <div className="reviewStarCont">
-                              <span id="rating">4.0</span>
-                            </div>
-                            <div className="ratingTextCont">
-                              <span id="ratingText"> Yeah. This dude was great! </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="reviewCard">
-                          <div className="profileAvatarCont">
-                            <img className="profileAvatar" alt= "Review Card Avatar" src="https://www.fillmurray.com/150/150"/>
-                          </div>
-                          <div className="reviewCardInfo">
-                            <div className="reviewNameCont">
-                              <span id="reviewerName"> Bill Murray </span>
-                            </div>
-                            <div className="reviewStarCont">
-                              <span id="rating">4.0</span>
-                            </div>
-                            <div className="ratingTextCont">
-                              <span id="ratingText"> Yeah. This dude was great! </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="reviewCard">
-                          <div className="profileAvatarCont">
-                            <img className="profileAvatar" alt= "Review Card Avatar" src="https://www.fillmurray.com/150/150"/>
-                          </div>
-                          <div className="reviewCardInfo">
-                            <div className="reviewNameCont">
-                              <span id="reviewerName"> Bill Murray </span>
-                            </div>
-                            <div className="reviewStarCont">
-                              <span id="rating">4.0</span>
-                            </div>
-                            <div className="ratingTextCont">
-                              <span id="ratingText"> Yeah. This dude was great! </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="reviewCard">
-                          <div className="profileAvatarCont">
-                            <img className="profileAvatar" alt= "Review Card Avatar" src="https://www.fillmurray.com/150/150"/>
-                          </div>
-                          <div className="reviewCardInfo">
-                            <div className="reviewNameCont">
-                              <span id="reviewerName"> Bill Murray </span>
-                            </div>
-                            <div className="reviewStarCont">
-                              <span id="rating">4.0</span>
-                            </div>
-                            <div className="ratingTextCont">
-                              <span id="ratingText"> Yeah. This dude was great! </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="reviewCard">
-                          <div className="profileAvatarCont">
-                            <img className="profileAvatar" alt= "Review Card Avatar" src="https://www.fillmurray.com/150/150"/>
-                          </div>
-                          <div className="reviewCardInfo">
-                            <div className="reviewNameCont">
-                              <span id="reviewerName"> Bill Murray </span>
-                            </div>
-                            <div className="reviewStarCont">
-                              <span id="rating">4.0</span>
-                            </div>
-                            <div className="ratingTextCont">
-                              <span id="ratingText"> Yeah. This dude was great! </span>
-                            </div>
-                          </div>
-                        </div>
+                        <ReviewCard profile="https://www.fillmurray.com/150/150" name="Bill Murray" rating="4.0" comment="Yeah. This dude was great!"/>
+                        <ReviewCard profile="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA2-AAAAJGM2NWI1MzAzLWJhNmUtNDRiNy1hY2U4LTdmOTdhZGEzNTI2OQ.jpg" name="Kevin Foo" rating="10.0" comment="Way better than better than the Fu School of Engineering "/>
+                        <ReviewCard profile="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA1ZAAAAJDBmZjFkNWJlLTkxOTktNGVmNy05ODVmLWQ4NWJkZTA3N2FkNA.jpg" name="Hui Wah Chiang" rating="5.0" comment="Please accept me"/>
                       </div>
+
                     </div>
                 </div>
-                // End of container
+            // End of container
         );
     }
 }
