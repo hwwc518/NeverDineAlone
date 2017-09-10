@@ -41,7 +41,7 @@ class SignUp extends Component {
   render() {
     return (
       <div className='app'>
-        <header>
+        <header id = "signHead">
             <div className='wrapper'>
               <h1>Live the life of a College Student</h1>
               
