@@ -16,10 +16,11 @@ h1, h2, h3, h4, h5, h6 {
     /*height: 550px;*/
     height: 95vh;
     font-family: 'Quicksand', sans-serif;
-
-
 }
 
+.searcher {
+	color: black;
+}
 
 .header-Center {
     padding-top: 30px;
@@ -41,7 +42,7 @@ a {
 
 .search-cont {
     padding-top: 12em;
-    width: 70%;
+    width: 98%;
     text-align: center;
     margin: 0 auto;
 }

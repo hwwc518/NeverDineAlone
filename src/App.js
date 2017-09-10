@@ -13,7 +13,7 @@ import './static/css/SignUp.css';
 class App extends Component {
     render() {
         return (
-			<SignUp/>
+			<Header/>
         );
     }
 }

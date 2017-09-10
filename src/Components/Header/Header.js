@@ -37,8 +37,9 @@ class App extends Component {
                     <div className = "search-cont">
                         <form>
                             <div className="demo">
-								<h3>Search Colleges</h3>
+								<h1>Search Colleges</h1>
 								<PowerSelect
+								className="searcher"
 								options={this.state.colleges}
 								selected={this.state.selectedCollege}
 								optionLabelPath="name"
